@@ -1,0 +1,24 @@
+{
+  "name": "@supersimplethings/resize",
+  "version": "1.0.0",
+  "description": "SuperSimple image resize in browser!",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:check": "tsc --noEmit"
+  },
+  "keywords": [
+    "supersimple",
+    "image",
+    "resize",
+    "browser"
+  ],
+  "author": "boris veligorya",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  }
+}
