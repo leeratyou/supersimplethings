@@ -1,4 +1,4 @@
-# supersimplethings
+# SuperSimpleThings
 All things should be super simple to use!
 
 ### Packages
