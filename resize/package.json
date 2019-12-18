@@ -1,11 +1,16 @@
 {
-  "name": "@supersimplethings/resize",
-  "version": "1.0.0",
+  "name": "@supersimplethings/resize-image-in-browser",
+  "version": "1.0.2",
   "description": "SuperSimple image resize in browser!",
+  "private": false,
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "build:check": "tsc --noEmit"
+    "build:check": "tsc --noEmit",
+    "deploy": "npm run deploy:patch",
+    "deploy:patch": "tsc && npm version patch && npm publish",
+    "deploy:minor": "tsc && npm version minor && npm publish",
+    "deploy:major": "tsc && npm version major && npm publish"
   },
   "keywords": [
     "supersimple",
@@ -16,9 +21,16 @@
   "author": "boris veligorya",
   "license": "MIT",
   "files": [
-    "lib"
+    "lib",
+    "src",
+    "*.md"
   ],
   "devDependencies": {
     "typescript": "^3.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leeratyou/supersimplethings.git",
+    "directory": "resize"
   }
 }

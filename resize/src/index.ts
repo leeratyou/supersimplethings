@@ -19,7 +19,7 @@ interface Options {
   output?: Output
 }
 
-export function resize(file: any, options: Options) {
+export function resize(file: any, options: Options): Promise<any> {
   const {
     maxWidth = 1024,
     maxHeight = 768,
