@@ -28,7 +28,7 @@ yarn add @supersimplethings/resize-image-in-browser
 ## API
 
 ```typescript
-type Resize = (file: File, options: Options) => Promise<dataURL|Blob|File>
+type Resize = (file: File, options?: Options) => Promise<dataURL|Blob|File>
 
 interface Options {
   maxWidth?: number   (1024) // in pixels // Aspect ratio will be saved
