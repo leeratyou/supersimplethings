@@ -33,8 +33,8 @@ type Resize = (file: File, options?: Options) => Promise<dataURL|Blob|File>
 interface Options {
   maxWidth?: number   (1024) // in pixels // Aspect ratio will be saved
   maxHeight?: number  (768) // in pixels  // Smaller one dimension would be applied
-  output?: Output     (jpeg)
-  format?: Format     (dataURL)
+  output?: Output     (dataURL)
+  format?: Format     (jpeg)
   quality?: number    (1.0) // from 0.1 to 1.0 (only 'jpeg')
 }
 
